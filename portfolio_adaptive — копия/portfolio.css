@@ -1,0 +1,346 @@
+body {
+
+    font-family: cursive;
+
+    background-color: #c8ed96;
+
+    color: #16021c;
+
+    margin: 0;
+
+    padding: 0;
+    
+
+}
+header {
+
+    background-color: #c89214;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+img {
+    max-width: 764pt;
+
+}
+nav ul {
+
+    list-style-type: inline-block;
+
+    font-size: 18pt;
+
+    margin:0px 40px;
+
+}
+nav li a {
+
+    text-decoration: none;
+
+    color: #16021c;
+
+    font-weight: bold;
+
+
+}
+.main-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding:20px;
+
+    max-width: none;
+
+}
+h1,h2 {
+
+    text-align: center;
+
+    color: rgb(243, 29, 207);
+
+
+}
+.main-header {
+
+    animation: move 3s infinite linear;
+
+}
+
+@keyframes move {
+
+    0% {
+
+        transform: translateX(-200px);
+
+    }
+
+    100% {
+
+        transform:translateX(200px); 
+
+    }
+}
+.content {
+
+    flex-basis: 78%;
+
+    padding: 20px;
+
+    background-color: #d24e22;
+
+}
+.main-image {
+
+    width: 333spx;
+
+    float:left;
+
+    margin-right: 233px;
+
+}
+.about {
+
+    font-size: 24pt;
+
+    float:left;
+
+    display: flex;
+
+}
+.hobbies {
+
+    margin-bottom: 50px;
+}
+.hobbies ul {
+
+    display: flex;
+}
+.hobbies li {
+
+flex-grow: 1;
+font-size: 18pt;
+}
+.iteam1 {
+
+    list-style-type: "\1F4BB"
+}
+.iteam2 {
+
+    list-style-type: "\1F5F2";
+}
+.iteam3 {
+
+    list-style-type: "\2708";
+}
+.iteam4  {
+
+
+    list-style-type: "\269D" ;
+}
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+th,td {
+
+    border:1px solid #eeb8ff;
+    padding: 8px;
+    text-align: left;
+
+}
+th {
+
+    background-color: #4c6ae6;
+    color: #eeb8ff;
+
+}
+tr:nth-child(even) td {
+
+    background-color: #e9d30e;
+}
+tr:nth-child(odd) td {
+
+    background-color: #139ac4;
+}
+.right-column {
+
+    flex-basis: 15%;
+    padding: 20px;
+    background-color: #8b1616;
+    font-size: 14pt;
+}
+.right-column ul li {
+
+    list-style-type:"\1F44D";
+
+}
+.right-column h2,.right-column ul {
+
+ 
+    animation: fadeInOut 2s infinite ease-in-out;
+     
+
+}
+@keyframes fadeInOut {
+
+    0%, 100% {
+
+        opacity: 0.3;
+    }
+    50% {
+
+        opacity: 1;
+    }
+
+}
+footer {
+
+    background-color: #16021c;
+    color: #eeb8ff;
+   
+    text-align: center;
+    padding: 1opx;
+}
+@media screen and (min-width:600px ) and  (min-width:1023px ) {
+    .header {
+
+        padding: 10px;
+    }
+    nav li {
+
+        font-size: 16pt;
+
+        margin: 0px 20px;
+
+    }
+    .content {
+
+        flex-direction: column;
+    }
+    .about {
+
+        flex-direction: column;
+}
+.main-imagem {
+
+    width: 100%;
+
+    margin-right: 0;
+
+    margin-bottom: 20px;
+
+}
+
+.hobbies ul, .right-column ul {
+
+    flex-direction: column;
+
+}
+.right-column {
+
+     flex-basis: 30%;
+
+}
+
+
+}
+
+@media screen  and (max-width: 599) {
+
+
+    .maim-header {
+
+        animation: none;
+
+    }
+
+    h1,h2 {
+
+
+        font-size: 24pt;
+
+    } 
+
+    nav {
+
+        display: none;
+    }
+
+    .main-content {
+
+        flex-direction: column;
+    }
+
+    .about {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+
+    .main-image {
+
+        width: 100%;
+
+        float: none;
+
+        margin: 0;
+    }
+
+
+    .about p {
+
+
+font-size: 16pt;
+
+    }
+
+.hobbies ul, .right-column ul {
+
+    flex-direction: column;
+}
+
+table {
+
+    font-size: 14pt;
+}
+
+th,td {
+
+    padding: 5px;
+}
+
+.right-column {
+
+    flex-basis: 100%;
+}
+
+
+.right-column ul {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.right-column h2, .right-column ul {
+
+    animation: none;
+}
+
+footer {
+
+    font-size: 12 pt;
+}
+
+} 
